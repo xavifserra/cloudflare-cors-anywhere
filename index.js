@@ -51,7 +51,6 @@ addEventListener("fetch", async event => {
                 if (requestedHeaders) {
                     headers.set("Access-Control-Allow-Headers", requestedHeaders);
                 }
-
                 headers.delete("X-Content-Type-Options"); // Remove X-Content-Type-Options header
             }
             return headers;
